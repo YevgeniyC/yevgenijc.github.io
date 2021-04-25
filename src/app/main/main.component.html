@@ -4,7 +4,7 @@
     <div class="main--skill-item" *ngFor="let item of objData">
       <div class="item-name">
         <img
-          src="../../assets/logos/{{ item.name }}_logo.svg"
+          src="./assets/logos/{{ item.name }}_logo.svg"
           style="width: 16px; height: 16px"
         />
         <span>{{ item.name }}</span>
@@ -27,11 +27,7 @@
       <h4>Tools:</h4>
 
       <div *ngFor="let tool of tools" class="main--tools">
-        <img
-          class="main--tools-img"
-          src="../../assets/image/done.svg"
-          alt="done"
-        />
+        <img class="main--tools-img" src="./assets/image/done.svg" alt="done" />
         {{ tool }}
       </div>
     </div>
