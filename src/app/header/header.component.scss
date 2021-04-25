@@ -1,0 +1,13 @@
+.header-nav {
+  margin: 0 16px;
+  display: flex;
+  border-bottom: 1px solid rgba(49, 54, 58, 0.3);
+  &--nav-item {
+    padding: 16px 16px;
+    margin: 0 4px 0;
+    a {
+      text-decoration: none;
+      color: initial;
+    }
+  }
+}

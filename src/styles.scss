@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/font/roboto-v27-latin-regular.ttf") format("truetype");
+}

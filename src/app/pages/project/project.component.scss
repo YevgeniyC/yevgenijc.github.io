@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  .project {
+    &--item-primary {
+      max-width: 350px;
+      width: 350px;
+      height: 350px;
+      background-image: url("../../../assets/image/placeholder_img.jpg");
+      background-size: cover;
+      border-radius: 12px;
+      margin-right: 16px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      .item-banner {
+        height: 52px;
+        background: rgb(75 70 137 / 100%);
+        color: white;
+        padding: 0 8px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+    }
+    &--item {
+      max-width: 250px;
+      width: 250px;
+      height: 350px;
+      background-image: url("../../../assets/image/placeholder_item.jpg");
+      background-size: cover;
+      border-radius: 12px;
+    }
+  }
+}

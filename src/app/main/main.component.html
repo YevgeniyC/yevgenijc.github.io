@@ -1,0 +1,56 @@
+<div class="main">
+  <div class="main--skills-block">
+    <h4>Skills:</h4>
+    <div class="main--skill-item" *ngFor="let item of objData">
+      <div class="item-name">
+        <img
+          src="../../assets/logos/{{ item.name }}_logo.svg"
+          style="width: 16px; height: 16px"
+        />
+        <span>{{ item.name }}</span>
+      </div>
+      <div class="level-bar">
+        <div class="level-bar--percent" [style.width.%]="item.level"></div>
+      </div>
+    </div>
+    <div class="main--interest">
+      <h4>Interested in:</h4>
+      <div
+        class="main--interest-chip"
+        [style.background]="interest.color"
+        *ngFor="let interest of interests"
+      >
+        {{ interest.name }}
+      </div>
+    </div>
+    <div class="main--tools-container">
+      <h4>Tools:</h4>
+
+      <div *ngFor="let tool of tools" class="main--tools">
+        <img
+          class="main--tools-img"
+          src="../../assets/image/done.svg"
+          alt="done"
+        />
+        {{ tool }}
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline--block" *ngFor="let job of jobExp">
+      <div class="timeline--line-start">{{ job.start }}</div>
+      <div class="timeline--text">
+        <h4>
+          {{ job.title }} @ <span>{{ job.company }}</span>
+        </h4>
+        <ul>
+          <li *ngFor="let item of job.content">
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+      <div class="timeline--line-end">{{ job.end }}</div>
+    </div>
+  </div>
+</div>
