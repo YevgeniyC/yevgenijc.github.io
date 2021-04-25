@@ -7,8 +7,6 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectComponent } from './pages/index';
-import { StoreModule } from '@ngrx/store';
-import { ProductReducer } from './reducers/products.reducer';
 
 @NgModule({
   declarations: [
@@ -18,11 +16,7 @@ import { ProductReducer } from './reducers/products.reducer';
     FooterComponent,
     ProjectComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    StoreModule.forRoot({ viewproduct: ProductReducer }),
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
